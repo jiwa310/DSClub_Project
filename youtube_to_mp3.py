@@ -19,15 +19,15 @@ youtube_link = 'https://www.youtube.com/watch?v=qZ90POH8JlA'
 link = browser.find_element_by_id('txtUrl')
 link.send_keys(youtube_link)
 
-# Go into audio (mp3) section
-audio = browser.find_element_by_xpath('/html/body/section[1]/div/div[2]/div[2]/div/div[2]/div/div[1]/button[2]')
-audio.click()
-
 # Start the conversion to mp3
 start = browser.find_element_by_xpath('/html/body/section[1]/div/div[2]/div[1]/div/form/button/span[1]')
 start.click()
 
 time.sleep(2)
+
+# Go into audio (mp3) section
+audio = browser.find_element_by_xpath('/html/body/section[1]/div/div[2]/div[2]/div/div[2]/div/div[1]/button[2]')
+audio.click()
 
 # Click the convert button for 160k quality
 btn = browser.find_element_by_xpath('/html/body/section[1]/div/div[2]/div[2]/div/div[2]/div/div[2]/table/tbody/tr[2]/td[3]/button')
