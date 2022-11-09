@@ -2,6 +2,7 @@ import time, datetime
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
+# Change before use
 browser = webdriver.Chrome('/Users/hongtan/Downloads/chromedriver')
 
 search = "angry joe"
