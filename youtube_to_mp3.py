@@ -30,13 +30,13 @@ audio = browser.find_element_by_xpath('/html/body/section[1]/div/div[2]/div[2]/d
 audio.click()
 
 # Click the convert button for 160k quality
-btn = browser.find_element_by_xpath('/html/body/section[1]/div/div[2]/div[2]/div/div[2]/div/div[2]/table/tbody/tr[2]/td[3]/button')
+btn = browser.find_element_by_xpath('/html/body/section[1]/div/div[2]/div[2]/div/div[2]/div/div[3]/table/tbody/tr[2]/td[3]/button')
 btn.click()
 
 time.sleep(1)
 
 # Click the download button
-downloadbtn = browser.find_element_by_xpath('/html/body/section[1]/div/div[2]/div[2]/div/div[2]/div/div[2]/table/tbody/tr[2]/td[3]/button/a')
+downloadbtn = browser.find_element_by_xpath('/html/body/section[1]/div/div[2]/div[2]/div/div[2]/div/div[3]/table/tbody/tr[2]/td[3]/button/a')
 downloadbtn.click()
 
 # link.click()
