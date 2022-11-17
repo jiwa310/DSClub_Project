@@ -1,13 +1,14 @@
 import time, datetime
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
+from bs4 import BeautifulSoup as bs
+
 
 # Change before use
 browser = webdriver.Chrome('/Users/hongtan/Downloads/chromedriver')
 
-search = "angry joe"
+# search = "angry joe"
 
-#browser.get(f'https://www.youtube.com/results?search_query={search}')
+# browser.get(f'https://www.youtube.com/results?search_query={search}')
 
 browser.get('https://en.y2mate.is/95/')
 
