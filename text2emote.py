@@ -15,8 +15,9 @@ Xfeatures = df['Clean_Text']
 ylabels = df['Emotion']
 
 
-pipe_lr = Pipeline(steps=[('cv',CountVectorizer()),('lr',LogisticRegression())])
+pipe_lr = Pipeline(steps=[('cv',CountVectorizer()),('lr',LogisticRegression(256))])
 x_train, x_test, y_train, y_test = train_test_split(Xfeatures, ylabels, test_size = 0.3)
 pipe_lr.fit(x_train,y_train)
+print(accuracy)
 print(pipe_lr.score(x_test,y_test))
 
