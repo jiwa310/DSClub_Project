@@ -1,4 +1,4 @@
 A Data Science Club project.
 
-Use machine learning to guess a person's mood based on their voice.
+Using emotion sentiment analysis to color code captions generated from user inputted audio transcribed with Whisper.
 
